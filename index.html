@@ -12,34 +12,35 @@
         <!-- Seção do formulário -->
         <section class="form-container">
             <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+                
                 <!-- Data -->
                 <label for="data">Data:</label>
-                <input type="date" id="data" name="data"><br>
+                <input type="date" id="data" name="data" required><br>
 
                 <!-- Dados de Acesso -->
                 <h2>Dados de Acesso</h2>
                 <label for="usuario">Usuário:</label>
-                <input type="text" id="usuario" name="usuario"><br>
+                <input type="text" id="usuario" name="usuario" required><br>
 
                 <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha"><br>
+                <input type="password" id="senha" name="senha" required><br>
 
                 <!-- Dados Pessoais -->
                 <h2>Dados Pessoais</h2>
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome"><br>
+                <input type="text" id="nome" name="nome" required><br>
 
                 <label for="endereco">Endereço:</label>
-                <input type="text" id="endereco" name="endereco"><br>
+                <input type="text" id="endereco" name="endereco" required><br>
 
                 <label for="numero">Número:</label>
-                <input type="text" id="numero" name="numero"><br>
+                <input type="text" id="numero" name="numero" required><br>
 
                 <label for="complemento">Complemento:</label>
                 <input type="text" id="complemento" name="complemento"><br>
 
                 <label for="cidade">Cidade:</label>
-                <input list="cidades" id="cidade" name="cidade">
+                <input list="cidades" id="cidade" name="cidade" required>
                 <datalist id="cidades">
                     <option value="Sorocaba">
                     <option value="São Paulo">
@@ -50,7 +51,7 @@
                 </datalist><br>
 
                 <label for="estado">Estado:</label>
-                <select id="estado" name="estado">
+                <select id="estado" name="estado" required>
                     <option value="SP">São Paulo</option>
                     <option value="RJ">Rio de Janeiro</option>
                     <option value="MG">Minas Gerais</option>
@@ -59,7 +60,7 @@
                 </select><br>
 
                 <label for="cep">CEP:</label>
-                <input type="text" id="cep" name="cep"><br>
+                <input type="text" id="cep" name="cep" required><br>
 
                 <!-- Gênero -->
                 <label>Gênero:</label><br>
@@ -79,7 +80,7 @@
                 <input type="checkbox" id="gestao_ti" name="curso" value="Gestão de TI">
                 <label for="gestao_ti">Gestão de TI</label>
                 <input type="checkbox" id="banco_dados" name="curso" value="Banco de Dados">
-                <label for="banco_dados">Banco de Dados</label><br><br>
+                <label for="banco_dados">Banco de Dados</label>
                 <input type="checkbox" id="outro" name="curso" value="Outro">
                 <label for="banco_dados">Outro</label><br><br>
 
