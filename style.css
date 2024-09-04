@@ -27,6 +27,9 @@ section.form-container {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 400px;
+    max-height: 90vh; /* Limite máximo de altura relativo à altura da janela de visualização */
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando o conteúdo excede a altura */
+    box-sizing: border-box; /* Inclui padding e bordas na largura/altura total */
 }
 
 /* Título do Formulário */
@@ -42,13 +45,16 @@ label {
     font-weight: bold;
 }
 
-input[type="text"], input[type="password"], input[type="date"], select, datalist {
-    width: calc(100% - 20px);
+/* Estilos dos Inputs e Selects */
+input[type="text"], input[type="password"], input[type="date"], select {
+    width: 100%; /* Torna os inputs responsivos à largura do container */
     padding: 8px;
     margin-bottom: 15px;
     border: 1px solid #D1C4E9;
     border-radius: 4px;
+    box-sizing: border-box; /* Inclui o padding na largura total */
 }
+
 
 input[type="radio"], input[type="checkbox"] {
     margin-right: 5px;
@@ -64,8 +70,10 @@ input[type="submit"] {
     cursor: pointer;
     font-size: 16px;
     width: 100%;
+    margin-top: 10px;
 }
 
 input[type="submit"]:hover {
     background-color: #6A1B9A; /* Cor mais escura ao passar o mouse */
 }
+
