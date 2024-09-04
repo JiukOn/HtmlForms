@@ -9,6 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden; /* Remove a rolagem da página principal */
 }
 
 /* Conteúdo Principal */
@@ -26,8 +27,9 @@ section.form-container {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    max-height: 90vh; /* Limite máximo de altura relativo à altura da janela de visualização */
+    width: 90%; /* Torna o formulário mais responsivo */
+    max-width: 400px; /* Limite máximo de largura */
+    max-height: 80vh; /* Limite máximo de altura relativo à altura da janela de visualização */
     overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando o conteúdo excede a altura */
     box-sizing: border-box; /* Inclui padding e bordas na largura/altura total */
 }
@@ -45,7 +47,6 @@ label {
     font-weight: bold;
 }
 
-/* Estilos dos Inputs e Selects */
 input[type="text"], input[type="password"], input[type="date"], select {
     width: 100%; /* Torna os inputs responsivos à largura do container */
     padding: 8px;
@@ -55,9 +56,9 @@ input[type="text"], input[type="password"], input[type="date"], select {
     box-sizing: border-box; /* Inclui o padding na largura total */
 }
 
-
 input[type="radio"], input[type="checkbox"] {
     margin-right: 5px;
+    margin-bottom: 10px; /* Adiciona espaçamento entre os radio buttons e checkboxes */
 }
 
 /* Botão de Envio */
@@ -70,10 +71,9 @@ input[type="submit"] {
     cursor: pointer;
     font-size: 16px;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 15px; /* Espaçamento acima do botão */
 }
 
 input[type="submit"]:hover {
     background-color: #6A1B9A; /* Cor mais escura ao passar o mouse */
 }
-
